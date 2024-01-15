@@ -1,11 +1,11 @@
 package modelo;
 
-public class Persona {
+
+public abstract class Persona{
 
     private String nombre;
     private int edad;
-
-
+   
     public Persona(String nombre, int edad){
         this.edad = edad;
         this.nombre = nombre;
@@ -30,4 +30,6 @@ public class Persona {
     public void escribirNombre(){
         System.out.println(this.nombre);
     }
+
+    public abstract void saltar(int altura);
 }

@@ -1,20 +1,29 @@
 import modelo.*;
+import animales.*;
 
 public class App {
 
     String mensaje;
     public static void main(String[] args) throws Exception {
 
+        Vaca animal1 = new Vaca();
+        animal1.comer(5);
+        Perro animal2 = new Perro();
+        animal2.comer(5);
 
-        Persona persona1 = new Persona("Antonio", 25);
+       /* Persona persona1 = new Persona("Antonio", 25);
         persona1.setEdad(25);
         persona1.setNombre("Antonio");
 
         String nombrePersona = persona1.getNombre();
         persona1.escribirNombre();;
+        */
 
 
         Alumno alumno1 = new Alumno("Maria", 20, "Primero");
+        alumno1.escribirNombre();
+
+        Alumno alumno2 = new Alumno("Pepe", 20, "Primero");
         alumno1.escribirNombre();
 
         System.out.println("Hello, World!");
